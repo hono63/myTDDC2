@@ -6,8 +6,17 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B77821461E18A5610029FED2 /* LedDriver.c in Sources */ = {isa = PBXBuildFile; fileRef = B77821431E18A5610029FED2 /* LedDriver.c */; };
+		B77821471E18A5610029FED2 /* LedDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = B77821441E18A5610029FED2 /* LedDriver.h */; };
+		B77821481E18A5610029FED2 /* type.h in Headers */ = {isa = PBXBuildFile; fileRef = B77821451E18A5610029FED2 /* type.h */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B778213C1E18A4410029FED2 /* libmyTDDC2.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libmyTDDC2.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77821431E18A5610029FED2 /* LedDriver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LedDriver.c; path = LedDriver/LedDriver.c; sourceTree = "<group>"; };
+		B77821441E18A5610029FED2 /* LedDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LedDriver.h; path = LedDriver/LedDriver.h; sourceTree = "<group>"; };
+		B77821451E18A5610029FED2 /* type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = type.h; path = LedDriver/type.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,16 +33,19 @@
 		B77821331E18A4410029FED2 = {
 			isa = PBXGroup;
 			children = (
-				B778213D1E18A4410029FED2 /* Products */,
+				B778213D1E18A4410029FED2 /* LedDriver */,
 			);
 			sourceTree = "<group>";
 		};
-		B778213D1E18A4410029FED2 /* Products */ = {
+		B778213D1E18A4410029FED2 /* LedDriver */ = {
 			isa = PBXGroup;
 			children = (
+				B77821431E18A5610029FED2 /* LedDriver.c */,
+				B77821441E18A5610029FED2 /* LedDriver.h */,
+				B77821451E18A5610029FED2 /* type.h */,
 				B778213C1E18A4410029FED2 /* libmyTDDC2.dylib */,
 			);
-			name = Products;
+			name = LedDriver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -43,6 +55,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77821481E18A5610029FED2 /* type.h in Headers */,
+				B77821471E18A5610029FED2 /* LedDriver.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +97,7 @@
 				en,
 			);
 			mainGroup = B77821331E18A4410029FED2;
-			productRefGroup = B778213D1E18A4410029FED2 /* Products */;
+			productRefGroup = B778213D1E18A4410029FED2 /* LedDriver */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -97,6 +111,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77821461E18A5610029FED2 /* LedDriver.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
