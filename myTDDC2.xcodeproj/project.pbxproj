@@ -10,13 +10,33 @@
 		B77821461E18A5610029FED2 /* LedDriver.c in Sources */ = {isa = PBXBuildFile; fileRef = B77821431E18A5610029FED2 /* LedDriver.c */; };
 		B77821471E18A5610029FED2 /* LedDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = B77821441E18A5610029FED2 /* LedDriver.h */; };
 		B77821481E18A5610029FED2 /* type.h in Headers */ = {isa = PBXBuildFile; fileRef = B77821451E18A5610029FED2 /* type.h */; };
+		B77821521E18A8BA0029FED2 /* gtest_LedDriver.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B77821511E18A8BA0029FED2 /* gtest_LedDriver.1 */; };
+		B77821571E18A90F0029FED2 /* LedDriver_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = B77821561E18A90F0029FED2 /* LedDriver_test.cc */; };
+		B77821591E18A9600029FED2 /* gtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B77821581E18A9600029FED2 /* gtest_main.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B778214B1E18A8BA0029FED2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				B77821521E18A8BA0029FED2 /* gtest_LedDriver.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B778213C1E18A4410029FED2 /* libmyTDDC2.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libmyTDDC2.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77821431E18A5610029FED2 /* LedDriver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LedDriver.c; path = LedDriver/LedDriver.c; sourceTree = "<group>"; };
 		B77821441E18A5610029FED2 /* LedDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LedDriver.h; path = LedDriver/LedDriver.h; sourceTree = "<group>"; };
 		B77821451E18A5610029FED2 /* type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = type.h; path = LedDriver/type.h; sourceTree = "<group>"; };
+		B778214D1E18A8BA0029FED2 /* gtest_LedDriver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gtest_LedDriver; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77821511E18A8BA0029FED2 /* gtest_LedDriver.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = gtest_LedDriver.1; sourceTree = "<group>"; };
+		B77821561E18A90F0029FED2 /* LedDriver_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LedDriver_test.cc; sourceTree = "<group>"; };
+		B77821581E18A9600029FED2 /* gtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = gtest_main.a; path = lib/gtest_main.a; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +47,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B778214A1E18A8BA0029FED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77821591E18A9600029FED2 /* gtest_main.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -34,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				B778213D1E18A4410029FED2 /* LedDriver */,
+				B778214E1E18A8BA0029FED2 /* gtest_LedDriver */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,8 +73,19 @@
 				B77821441E18A5610029FED2 /* LedDriver.h */,
 				B77821451E18A5610029FED2 /* type.h */,
 				B778213C1E18A4410029FED2 /* libmyTDDC2.dylib */,
+				B778214D1E18A8BA0029FED2 /* gtest_LedDriver */,
 			);
 			name = LedDriver;
+			sourceTree = "<group>";
+		};
+		B778214E1E18A8BA0029FED2 /* gtest_LedDriver */ = {
+			isa = PBXGroup;
+			children = (
+				B77821581E18A9600029FED2 /* gtest_main.a */,
+				B77821561E18A90F0029FED2 /* LedDriver_test.cc */,
+				B77821511E18A8BA0029FED2 /* gtest_LedDriver.1 */,
+			);
+			path = gtest_LedDriver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +120,23 @@
 			productReference = B778213C1E18A4410029FED2 /* libmyTDDC2.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		B778214C1E18A8BA0029FED2 /* gtest_LedDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B77821531E18A8BA0029FED2 /* Build configuration list for PBXNativeTarget "gtest_LedDriver" */;
+			buildPhases = (
+				B77821491E18A8BA0029FED2 /* Sources */,
+				B778214A1E18A8BA0029FED2 /* Frameworks */,
+				B778214B1E18A8BA0029FED2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gtest_LedDriver;
+			productName = gtest_LedDriver;
+			productReference = B778214D1E18A8BA0029FED2 /* gtest_LedDriver */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +159,7 @@
 			projectRoot = "";
 			targets = (
 				B778213B1E18A4410029FED2 /* myTDDC2 */,
+				B778214C1E18A8BA0029FED2 /* gtest_LedDriver */,
 			);
 		};
 /* End PBXProject section */
@@ -112,6 +170,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B77821461E18A5610029FED2 /* LedDriver.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B77821491E18A8BA0029FED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77821571E18A90F0029FED2 /* LedDriver_test.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +268,36 @@
 			};
 			name = Release;
 		};
+		B77821541E18A8BA0029FED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					lib,
+					"$(inherited)",
+					/Users/norifumi/Git/myTDDC2/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "include LedDriver";
+			};
+			name = Debug;
+		};
+		B77821551E18A8BA0029FED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					lib,
+					"$(inherited)",
+					/Users/norifumi/Git/myTDDC2/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "include LedDriver";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -219,6 +315,14 @@
 			buildConfigurations = (
 				B77821411E18A4410029FED2 /* Debug */,
 				B77821421E18A4410029FED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B77821531E18A8BA0029FED2 /* Build configuration list for PBXNativeTarget "gtest_LedDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B77821541E18A8BA0029FED2 /* Debug */,
+				B77821551E18A8BA0029FED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -72,5 +72,5 @@ void LedDriver_TurnAllOn()
 
 bool LedDriver_isON(int ledNumber)
 {
-    return bool(ledsImage & convertLedNumberToBit(ledNumber));
+    return (bool)(ledsImage & convertLedNumberToBit(ledNumber));
 }
